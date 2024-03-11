@@ -1,8 +1,11 @@
 .sidebar{
-    flex: 1;
-    min-height: 100vh;
-    border-right: 1px solid grey;
-    border-top:1px solid grey;
+    flex: .9;
+    min-height: 97vh;
+    background-color: rgb(23, 22, 22);
+    
+    /* border-right: 1px solid grey; */
+    /* border-top:1px solid grey; */
+    
     
 }
 .top{
@@ -13,12 +16,14 @@
     padding-top:5px;
     padding-bottom:16px;
     font-weight: bolder;
-    border-bottom: solid 1px grey;
-    background-color: lavender;
+    /* border-bottom: solid 1px grey; */
+    background-color: rgb(23, 22, 22);
+    font-family: 'Times New Roman', Times, serif;
+
     
 }
 .admin{
-    color: black;
+    color: grey;
     font-size: xx-large;
     font-weight: 900;
     
@@ -56,5 +61,5 @@ a{
     text-decoration: none;
 }
 li:hover{
-    background-color: rgb(245, 235, 255);
+    background-color: white;
 }

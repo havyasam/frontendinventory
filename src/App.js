@@ -1,9 +1,13 @@
 import Home from './pages/home/Home'
 import Users from './pages/users/Users'
-import Category from './pages/category/Category'
+import Brands from './pages/brands/Brands'
+import Brandedit from './pages/Brandedit/Brandedit'
+import Stores from './pages/stores/Stores'
 import Orders from './pages/orders/Orders'
 import Products from './pages/products/Products'
 import Dashboard from './pages/dashboard/Dashboard'
+import Storeedit from './pages/Storeedit/Storeedit'
+import Ordereedit from './pages/Orderedit/Orderedit'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -16,7 +20,11 @@ function App() {
        <Route path="/">
          <Route index element={<Dashboard />}/>
          <Route path='/users' element={<Users/>}/>
-         <Route path='/category' element={<Category/>}/>
+         <Route path='/stores' element={<Stores/>}/>
+         <Route path='/brands' element={<Brands/>}/>
+         <Route path='/brandedit/:id' element={<Brandedit/>}/>
+         <Route path='/storeedit/:id/:store_name' element={<Storeedit/>}/>
+         <Route path='/orderedit/:id/:ord_name' element={<Ordereedit/>}/>
          <Route path='/Orders' element={<Orders/>}/>
          <Route path='/products' element={<Products/>}/>
         

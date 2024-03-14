@@ -70,7 +70,7 @@ export const Orders = () => {
                   <td>{order.amount}</td>
                   <td>{order.status}</td>
                  
-                  <td><Link to={`/orderedit/${order.ord_no}/${order.ord_name}`}  ><button className='edit'>edit</button></Link></td>
+                  <td><Link to={`/orderedit/${order.cust_id}/${order.cust_name}`}  ><button className='edit'>edit</button></Link></td>
                   <td><button className='delete' onClick={()=>handleDelete(order.cust_id)}>delete</button></td>
                 </tr>
               ))}

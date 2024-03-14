@@ -1,11 +1,11 @@
 .brandmodalmain{
     border: solid 1px black;
-    height: 300px;
+    height: 450px;
     width: 400px;
     background: rgb(165, 165, 234);
     border-radius: 3px;
     margin-left: 400px;
-    margin-top: 150px;
+    margin-top: 50px;
     padding-left: 30px;
     
     position: absolute;
@@ -48,3 +48,14 @@ select{
 .manage{
     padding-left: 10px;
 }
+label{
+    display: table-cell;
+    text-align: right;
+    font-weight: bolder;
+}
+input {
+  display: table-cell;
+  color:green
+}
+
+

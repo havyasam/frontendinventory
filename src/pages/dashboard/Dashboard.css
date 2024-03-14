@@ -82,4 +82,7 @@
     font-size: 80px !important;
     color: rgb(6, 255, 0); 
 }
+button:hover {
+    cursor:pointer;
+}
 

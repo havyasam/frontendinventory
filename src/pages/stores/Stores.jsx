@@ -45,7 +45,7 @@ export const Stores = () => {
     {brandmodal&&<Brandmodal onClose={()=>setbrandmodal(false)}/>}
     <button onClick={()=>setbrandmodal(true)} className="brandbutton">Add Button</button>
     <div className='brandmain'>
-      <h3>Manage Brands</h3>
+      <h3>Manage Stores</h3>
      
       <table border='2'>
         <tr>

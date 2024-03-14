@@ -8,7 +8,7 @@ const Storeedit = () => {
     const location = useLocation();
     const status = new URLSearchParams(location.search).get('status');
     const { id ,store_name} = useParams();
-    console.log(id)
+    
     const [store, setStore] = useState({ id: id, store_name: '',status:'' });
 
     const fetchData = async () => {

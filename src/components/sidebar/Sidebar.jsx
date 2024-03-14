@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className='top'>
-            <span className='admin'>ADMIN</span>
+            <span className='admin'>STYLE SYNC</span>
             
         </div>
        
@@ -27,14 +27,14 @@ const Sidebar = () => {
                 <p className='title'>MAIN</p>
                 <li><Link to="/"><DashboardIcon className='icon'/><span>Dashboard</span></Link></li>
                 <p className='title'>LIST</p>
-                <li><Link to='/users'><PersonIcon className='icon'/><span>Users</span></Link></li>
+                {/* <li><Link to='/users'><PersonIcon className='icon'/><span>Users</span></Link></li> */}
                 <li><Link to='/brands'><BrandingWatermarkIcon className='icon'/><span>Brand</span></Link></li>
                 <li><Link to='/stores'><LocalMallIcon className='icon'/><span>Store</span></Link></li>
                 <li><Link to='/Orders'><BorderStyleIcon className='icon'/><span>Orders</span></Link></li>
                 <li><Link to='/products'><ProductionQuantityLimitsIcon className='icon'/><span>Products</span></Link></li>
                 <p className='title'>USERS</p>
                 <li><SettingsIcon className='icon'/><span>Setting</span></li>
-                <li><LogoutIcon className='icon'/><span>Lagout</span></li>
+                <li><LogoutIcon className='icon'/><span>Logout</span></li>
     
             </ul>
         </div>

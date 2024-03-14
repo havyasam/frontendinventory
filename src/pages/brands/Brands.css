@@ -9,6 +9,8 @@ table,tr,td{
     padding-left: 20px;
     width: 900px;
     border-collapse: collapse;
+    border-radius: 3
+    0px;
 }
 .brandbutton{
     height: 40px;

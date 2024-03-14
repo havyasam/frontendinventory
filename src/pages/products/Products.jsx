@@ -40,7 +40,7 @@ export const Products = () => {
     {brandmodal&&<Brandmodal onClose={()=>setbrandmodal(false)}/>}
     <button onClick={()=>setbrandmodal(true)} className="brandbutton">Add Button</button>
     <div className='brandmain'>
-      <h3>Manage Orders</h3>
+      <h3>Manage Products</h3>
      
       <table border='2'>
         <tr>
@@ -73,7 +73,7 @@ export const Products = () => {
                   <td>{product.store}</td>
                   <td>{product.availability}</td>
                  
-                  <td><Link to={`/orderedit/${product.product_no}/${product.product_name}`}  ><button className='edit'>edit</button></Link></td>
+                  <td><Link to={`/productedit/${product.product_no}/${product.product_name}`}  ><button className='edit'>edit</button></Link></td>
                   <td><button className='delete' onClick={()=>handleDelete(product.product_no)}>delete</button></td>
                 </tr>
               ))}

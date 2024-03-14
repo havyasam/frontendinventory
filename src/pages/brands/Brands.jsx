@@ -58,7 +58,10 @@ export const Brands = () => {
                   <td>{brand.brand_no}</td>
                   <td>{brand.brand_name}</td>
                   <td>{brand.status}</td>
-                  <td><Link to={`/brandedit/${brand.brand_no}`} ><button className='edit'>edit</button></Link></td>
+                  <td><Link to={{ 
+                    pathname:`/brandedit/${brand.brand_no}/${brand.brand_name}` ,
+                    search:`?status=${brand.status}`
+                    }} ><button className='edit'>edit</button></Link></td>
                   <td><button className='delete' onClick={()=>handleDelete(brand.brand_no)}>delete</button></td>
                 </tr>
               ))}

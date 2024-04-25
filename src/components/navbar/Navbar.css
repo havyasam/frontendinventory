@@ -2,10 +2,26 @@
     display: flex;
     align-items: center;
     height: 59px;
-    background-color: rgb(23, 22, 22); 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7KsKioshM0LlSQhJD5dR3apASHLeWllpuKNrDpQUZU7ERLgNOG1uU2wrwquZ9jBOrmo&usqp=CAU");
+
 
 }
 .time{
     color: white;
     padding-left: 1100px;
+}
+.hed{
+    color: white;
+    font-weight: bolder;
+    padding-left: 370px;
+    font-size: 45px;
+}
+.a1{
+    color: red;
+}
+.a2{
+    color: white;
+}
+.a3{
+    color: blue;
 }

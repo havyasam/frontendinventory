@@ -33,8 +33,9 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
     <div className='dash'>
     <Sidebar/>
     <div className='dashboard'><Navbar/>
+    <div className='contain2'>
     <div className='dashlist'>
-        <div className="dash1">
+        {/* <div className="dash1">
             <div className='left'>
                 <span className='score'>{data.productCount}</span>
                 <span className='title'>Total Products</span>
@@ -43,11 +44,11 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
                 <ProductionQuantityLimitsIcon className='icn1'/>
                 <span className='more'>More info</span>
             </div>
-        </div>
+        </div> */}
         <div className="dash2">
         <div className='left'>
                 <span className='score'>{data.orderCount}</span>
-                <span className='title'>Total Orders</span>
+                <span className='title'>TOTAL CLIENTS</span>
             </div>
             <div className='right'>
                 <BorderStyleIcon className='icn2'/>
@@ -57,7 +58,7 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
         <div className="dash3">
         <div className='left'>
                 <span className='score'>{data.userCount}</span>
-                <span className='title'>Total Users</span>
+                <span className='title'>TOTAL VEHICLES</span>
             </div>
             <div className='right'>
                 <PersonIcon className='icn3'/>
@@ -67,7 +68,7 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
         <div className="dash4">
         <div className='left'>
                 <span className='score'>{data.storeCount}</span>
-                <span className='title'>Total Stores</span>
+                <span className='title'>TOTAL EMPLOYEES</span>
             </div>
             <div className='right'>
                 <CategoryIcon className='icn4'/>
@@ -76,7 +77,7 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
         </div>
     </div>
     </div>
-    
+    </div>
   </div>
   )
 }

@@ -2,13 +2,14 @@
     display: flex;
 }
 .dashboard{
-    flex: 7;
+    flex: 6;
 }
 .dashlist{
     display: flex;
+    padding-top: 200px;
     justify-content: center;
-    margin-top: 10px;
-    gap: 10px;
+    margin-top: 0px;
+    gap: 70px;
 }
 .dash1{
     display: flex;
@@ -16,15 +17,16 @@
     width: 310px;
     height: 200px;
     /* background: blue; */
-    border: solid 1px grey;
+    border: solid 1px white;
     -webkit-box-shadow: -2px 1px 13px 1px rgba(0,0,0,0.99); 
     box-shadow: -2px 1px 13px 1px grey;
     border-radius: 7px;
+    color: white;
 }
 .left,.right{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     justify-content: space-around;
     text-align: center;
     
@@ -32,34 +34,35 @@
 .dash2{
     display: flex;
     justify-content: space-between;
-    width: 310px;
+    width: 350px;
     height: 200px;
-    /* background:rgb(255, 0, 0); */
-    border: solid 1px grey;
+    background:black;
+    border: solid 4px white;
     -webkit-box-shadow: -2px 1px 13px 1px rgba(0,0,0,0.99); 
-    box-shadow: -2px 1px 13px 1px grey;
+    box-shadow: -2px 1px 13px 1px white;
     border-radius: 7px;
+    
 }
 .dash3{
     display: flex;
     justify-content:space-between;
-    width: 310px;
+    width: 350px;
     height: 200px;
-    /* background: rgb(255, 248, 10); */
-    border: solid 1px grey;
+    background: rgb(123, 102, 255);
+    border: solid 4px black;
     -webkit-box-shadow: -2px 1px 13px 1px rgba(0,0,0,0.99); 
-    box-shadow: -2px 1px 13px 1px grey;
+    box-shadow: -2px 1px 13px 1px white;
     border-radius: 7px;
 }
 .dash4{
     display: flex;
     justify-content: space-between;
-    width: 310px;
+    width: 350px;
     height: 200px;
-    /* background: rgb(6, 255, 0); */
-    border: solid 1px grey;
+    background:rgb(0, 34, 77); 
+    border: solid 4px black;
     -webkit-box-shadow: -2px 1px 13px 1px rgba(0,0,0,0.99); 
-    box-shadow: -2px 1px 13px 1px grey;
+    box-shadow: -2px 1px 13px 1px white;
     border-radius: 7px;
 }
 .score{
@@ -85,4 +88,23 @@
 button:hover {
     cursor:pointer;
 }
-
+.contain2{
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710892800&semt=ais");
+    
+    background-size: 1300px 900px;
+    padding-top: 10px;
+    height: 800px;
+}
+.manage{
+    font-size: 30px;
+    color: black;
+}
+.title{
+    color: white;
+}
+.score{
+    color: white;
+}
+.more{
+    color: white;
+}

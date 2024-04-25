@@ -8,7 +8,7 @@ table{
 th{
     height: 50px;
     color: white;
-    background:rgb(6, 210, 67);
+    background:rgb(44, 10, 44);
 }
 td{
     width: 150px;
@@ -16,3 +16,15 @@ td{
     text-align: center;
 }
 .orders tr:nth-child(even){background-color: #f2f2f2;}
+
+.contain22{
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710892800&semt=ais");
+    
+    background-size: 1300px 900px;
+    
+    height: 800px;
+}
+.manage{
+    font-size: 30px;
+    color: black;
+}

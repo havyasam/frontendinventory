@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Brandmodal from '../../components/Brandmodal/Brandmodal';
+import './Products.css'
 export const Products = () => {
   const navigate = useNavigate();
   const [brandmodal,setbrandmodal]=useState(false)
@@ -36,28 +37,29 @@ export const Products = () => {
     <div className='home'>
     <Sidebar/>
     <div className='container1'><Navbar/>
-    <h1 className='manage'>Manage <span>Products</span></h1>
+    <div className='contain23'>
+    {/* <span className='manage'>Manage <span>Vehicles</span></span>
+    <br /> */}
+    <br />
+     <span className='manage'>MANAGE VEHICLES</span>
+     <br /><br />
     {brandmodal&&<Brandmodal onClose={()=>setbrandmodal(false)}/>}
     <button onClick={()=>setbrandmodal(true)} className="brandbutton">Add Button</button>
     <div className='brandmain'>
-      <h3>Manage Products</h3>
+     
      
       <table border='2'>
         <tr>
-          <th>product_no</th>
-          <th>product_name</th>
-          <th>price</th>
-          <th>quantity</th>
-          <th>color</th>
-          <th>size</th>
-          <th>brand</th>
-          <th>category</th>
-          <th>store</th>
-          <th>availability</th>
+          <th>REGISTRATION NUMBER</th>
+          <th>VEHICLE NAME</th>
+          <th>COLOR</th>
+          <th>SIZE</th>
+          <th>MAKER</th>
           
           
           
-          <th colspan='2'>Action</th>
+          
+          <th colspan='2'>ACTION</th>
         </tr>
         
         {products.map(product => (
@@ -80,6 +82,7 @@ export const Products = () => {
       </table>
     </div>
     </div>
+  </div>
   </div>
   )
 }

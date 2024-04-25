@@ -41,18 +41,22 @@ export const Stores = () => {
     <div className='home'>
     <Sidebar/>
     <div className='container1'><Navbar/>
-    <h1 className='manage'>Manage <span>Stores</span></h1>
+    <div className='contain21'>
+      <br />
+      <span className='manage'>MANAGE EMPLOYEE</span>
+      <br /><br />
+   
     {brandmodal&&<Brandmodal onClose={()=>setbrandmodal(false)}/>}
     <button onClick={()=>setbrandmodal(true)} className="brandbutton">Add Button</button>
     <div className='brandmain'>
-      <h3>Manage Stores</h3>
+     
      
       <table border='2'>
         <tr>
-          <th>Brand Id</th>
-          <th>Name</th>
-          <th>Status</th>
-          <th colspan='2'>Action</th>
+          <th>EMPLOYEE ID</th>
+          <th>NAME</th>
+          <th>PHONE</th>
+          <th colspan='2'>ACTION</th>
         </tr>
         
         {stores.map(store => (
@@ -70,6 +74,7 @@ export const Stores = () => {
       </table>
     </div>
     </div>
+  </div>
   </div>
   )
 }

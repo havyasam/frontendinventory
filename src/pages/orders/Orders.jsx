@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 
+
 export const Orders = () => {
   const navigate = useNavigate();
   const [brandmodal,setbrandmodal]=useState(false)
@@ -38,25 +39,26 @@ export const Orders = () => {
     <div className='home'>
     <Sidebar/>
     <div className='container1'><Navbar/>
-    <h1 className='manage'>Manage <span>Orders</span></h1>
+    <div className='contain22'>
+      <br />
+    <span className='manage'>MANAGE CLIENT</span>
+    <br /><br />
     {brandmodal&&<Brandmodal onClose={()=>setbrandmodal(false)}/>}
     <button onClick={()=>setbrandmodal(true)} className="brandbutton">Add Button</button>
     <div className='brandmain'>
-      <h3>Manage Orders</h3>
+     
      
       <table border='2'>
         <tr>
-          <th>cust_id</th>
-          <th>cust_name</th>
-          <th>cust_address</th>
-          <th>phone</th>
-          <th>product</th>
-          <th>quantity</th>
-          <th>amount</th>
-          <th>status</th>
+          <th>CLIENT ID</th>
+          <th>CLIENT NAME</th>
+          <th>CLIENT ADDRESS</th>
+          <th>PHONE</th>
+          <th>AMOUNT</th>
+          <th>STATUS</th>
           
           
-          <th colspan='2'>Action</th>
+          <th colspan='2'>ACTION</th>
         </tr>
         
         {orders.map(order => (
@@ -68,7 +70,7 @@ export const Orders = () => {
                   <td>{order.product}</td>
                   <td>{order.quantity}</td>
                   <td>{order.amount}</td>
-                  <td>{order.status}</td>
+                  <td>{order.status}</td> 
                  
                   <td><Link to={`/orderedit/${order.cust_id}/${order.cust_name}`}  ><button className='edit'>edit</button></Link></td>
                   <td><button className='delete' onClick={()=>handleDelete(order.cust_id)}>delete</button></td>
@@ -77,6 +79,7 @@ export const Orders = () => {
       </table>
     </div>
     </div>
+  </div>
   </div>
   )
 }

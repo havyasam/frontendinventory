@@ -18,9 +18,10 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h2 align="center" className="time">
+      {/* <h2 align="center" className="time">
         {currentTime.toLocaleTimeString()}
-      </h2>
+      </h2> */}
+      <h1 className="hed">SSM TRAVEL SOLUTIONS</h1>
     </div>
   );
 };
